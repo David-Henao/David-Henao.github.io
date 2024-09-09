@@ -1,0 +1,1420 @@
+/* =====================================================
+   =            INICIO CSS GENERALES                   =
+   ===================================================== */
+
+*{
+  margin: 0; /*Margen Externa Principal De Toda La Página*/
+  padding: 0;/*Margen Interna Principal DE Toda La Página*/
+  box-sizing: border-box; /*Código Para Que No Se Desborden Los 
+                           Bordes De Toda La Página*/
+}
+
+body{
+  font-family: 'Poppins', sans-serif;/*Estlio De Letra En Toda La Página*/
+  font-size: 16px; /* Tamaño De Letra En Toda La Página */
+}
+
+/* =====================================================
+   =            FIN CSS GENERALES                      =
+   ===================================================== */
+
+
+/* =====================================================
+   =            INICIO BOTON VOLVER ARRIBA             =
+   ===================================================== */
+
+
+/*---Boton Volver Arriba----*/
+
+.btn-volver-arriba{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 99999;
+  margin-right: -60px;
+  transition: all .4s ease;
+}
+
+#nave{
+	width: 100%;
+	max-width: 500px;
+	position: absolute;
+	left: 20%;
+	top: 20%;
+	z-index: 999;}
+
+/* .btn-volver-arriba a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30%;
+  text-align: center;
+}
+
+.btn-volver-arriba a i{
+  font-size: 1rem;
+  color: #fff;
+  line-height: 40px;
+} */
+
+/* =====================================================
+   =          FIN BOTON VOLVER ARRIBA                  =
+   ===================================================== */
+
+/* =====================================================
+   =             INICIO MENÚ PRINCIPAL                 =
+   ===================================================== */
+
+/* --- Encabezado Principal ---- */
+
+.menu-bar-pc{
+  width:100%;
+  min-height: 68px;
+  border-bottom: 1px solid rgba(255,255,255, 0.15);
+  padding: 0px 120px;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+
+/*--- Logo Principal ---*/
+}
+
+.logo{
+  display: inline-block;
+  width: 50px;
+}
+
+.logo img{
+  width: 100%;
+  vertical-align: top;
+  border-radius: 5px 0px 5px 0px;
+}
+
+/*-- Menú Principal Y Redes Sociales --*/
+
+.menu-principal a, .top-redes a{
+  display: inline-block;
+  padding: 0 6px;
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.876rem;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  transition: all .3s ease;
+  font-weight: 900;
+}
+
+.menu-principal a:last-child, .top-redes a:last-child{
+  padding-right: 0;
+}
+
+/*-- Tamaño Redes Sociales --*/
+
+.top-redes a i{
+  font-size: 1rem;
+}
+
+.menu-principal a:hover, .top-redes a:hover{
+  color: #0AA0A0;
+}
+
+
+.icon-youtube:hover{
+  color: #F25630;
+}
+
+.icon-instagram-1:hover{
+  color: #8130F2;
+}
+
+.icon-google-plus-circle:hover{
+  color: #ECD213;
+}
+
+/* =====================================================
+   =              FIN MENÚ PRINCIPAL                   =
+   ===================================================== */
+
+/* =====================================================
+   =          INICIO MENÚ SECUNDARIO                   =
+   ===================================================== */
+
+.fixed-header{ 
+  width: 100%;
+  min-height: 68px;
+  border-bottom: 1px solid rgba(204,204,204,0.5);
+  padding: 0 120px;
+  background-color: #E0ECEA;
+  background-image: linear-gradient(0deg, #E0ECEA 25%, #50DCEB 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: all .4s ease;
+  margin-top: -68px;
+
+}
+
+.fixed-header .menu-principal a, .fixed-header .top-redes a{
+  color: #444;
+
+}
+
+.fixed-header .menu-principal a:hover, .top-redes a:hover{
+  color: #0AA0A0;
+
+}
+
+
+.icon-youtube:hover{
+  color: #F25630;
+}
+
+.icon-instagram-1:hover{
+  color: #8130F2;
+}
+
+.icon-google-plus-circle:hover{
+  color: #ECD213;
+}
+/* =====================================================
+   =              FIN MENÚ SECUNDARIO                  =
+   ===================================================== */
+
+/* =====================================================
+   =               INICIO MENÚ MOVIL                   =
+   ===================================================== */
+
+/*-- Menú Movil --*/
+.menu-mobile{
+  display: none;
+
+}
+
+/* =====================================================
+   =                 FIN MENÚ MOVIL                    =
+   ===================================================== */
+
+/* =====================================================
+   =         INICIO MAIN O PÁGINA PRINCIPAL          =
+   ===================================================== */
+
+/* ------ Main ó Página Principal ------ */
+
+/*-- Banner principal --*/
+
+.main{ 
+  width: 100%; /*Tamaño De Toda La Página Principal*/
+  margin-top: -68px; /*Tamaño Para Que Se Vea El Titulo Y El Menú 
+                      Principal*/
+
+}
+
+.main .banner-principal{
+  width: 100%; /*Tamaño De La Primera Parte De La Página*/
+  position: relative; /*Posición De La Primera Parte De La Página*/
+
+}
+
+.main .banner-principal .banner{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/Gif\ Web\ Developer.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main .banner-principal .texto-banner{
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 30vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.main .banner-principal .texto-banner h2{
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+  /*animation-name: logo;*/  /*Animación Del Titulo*/
+  /*animation-duration: 5s;*/ /*Duración Del Animación*/
+
+}
+
+
+
+.main .banner-principal .texto-banner h1{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 90px;
+  
+  margin-bottom: 30px;
+  font-family: algerian black;
+  cursor: pointer;
+  color: transparent;
+  background-color: #24B0E1;
+  background-image: linear-gradient(0deg, #fff 50%, #9FACE6 100%);
+  -webkit-background-clip:text;
+  /*animation-name: logo;  /*Animación Del Titulo*/
+ /* animation-duration: 5s; /*Duración De La Animación*/
+
+
+}
+
+/* ============================================
+   =       INICIA ANIMACIÓN TITULO DEL        =
+   =       BANNER PRINCIPAL DE LA PÁGINA      =
+   ============================================ */
+
+/* ================================================================
+   = Codigo para que la animación flote de abajo hacia arriba     =
+   ================================================================ */
+
+
+/*@keyframes logo{
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}*/
+
+/* ============================================
+   =       FIN ANIMACIÓN TITULO DEL           =
+   =       BANNER PRINCIPAL DE LA PÁGINA      =
+   ============================================ */
+
+.main .banner-principal .texto-banner a{
+  margin-top: 30vh;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #0089E0;
+  color: white;
+  transition: all .7s ease;
+  font-weight: 500;
+  border-radius: 10px;
+  border-color: red;
+
+}
+
+.main .banner-principal .texto-banner a:hover{
+  background: #fff;
+  color: #0AA0A0;
+}
+
+/* =====================================================
+   =          FIN MAIN O PÁGINA PRINCIPAL           =
+   ===================================================== */
+ 
+
+/* =====================================================
+   =          INICIO CONTENEDOR DE PROYECTOS           =
+   ===================================================== */
+/*Ancho Del Contenedor De La Sección Proyectos*/
+.contenedor{ 
+  width: 90%;
+  height: auto;
+  max-width: 1080px;
+  margin: 0 auto;
+  
+}
+
+/*Centrar Título*/
+
+.titulo-seccion{
+
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/*Subtítulo*/
+.titulo-seccion h2{
+  color: transparent;
+  background-color: #24E1A1;
+  background-image: linear-gradient(0deg, #444 25%, #9FACE6 100%);
+  -webkit-background-clip:text;
+  text-align: center;
+  font-size: 50px;
+  
+  }
+
+
+/*Proyectos*/
+
+.main .proyectos{
+  background: #F3F4FA;
+  padding: 108px 0 54px 0;
+}
+
+.main .proyectos .galeria-proyectos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #ccc;
+}
+
+.main .proyectos .galeria-proyectos .proyecto{
+  width: 32%;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
+.main .proyectos .galeria-proyectos .proyecto img{
+  width: 100%;
+  vertical-align: top;
+}
+
+/*Modal fotos proyectos*/
+.modal{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 9999999999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img{
+  width: 90%;
+  max-width: 850px;
+}
+
+.modal .btn-cerrar{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  right: 20px;
+  background-color: #21E7F3;
+  background-image: linear-gradient(0deg, #21E7F3 50%, #fff 100%);
+  text-align: center;
+  cursor: pointer;
+}
+
+.modal .btn-cerrar i{
+  color: #fff;
+  font-size: 1rem;
+  line-height: 50px;
+
+}
+
+
+/* =====================================================
+   =       INICIO EFECTO HOVER EN IMAGENES PROYECTOS   =
+   ===================================================== */
+    
+.proyecto{
+  width: 100%; 
+  height: auto;
+  overflow: hidden;/*Codigo Para que no se salga el efecto de la imagen*/
+  position: relative;
+  cursor: pointer;
+  left: 15%;
+  transform: translate(-50%);
+  transition: all 300ms;
+}
+
+.proyecto:hover{
+    box-shadow: 0px 0px 30px -5px black; 
+}
+
+.proyecto img{
+
+    width: 100%;
+    height: auto;
+    transition: all 800ms;
+}
+
+.proyecto:hover img{
+    transform: scale(1.4) rotate(10deg);
+}
+
+.proyecto h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: white;
+    z-index: 2;
+    transition: all 600ms cubic-bezier(1,0,0,1);
+    border: 2px solid white;
+    background: black;
+    padding: 6px
+
+}
+
+.proyecto:hover h1{
+     transform: translate(-50%, -50%) scale(1);
+     border-radius: 10px 0 10px 0;
+
+}
+
+.proyecto:before,
+.proyecto:after{
+    content: '';
+    width: 420px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.6;
+    transition: all 600ms cubic-bezier(1,0,0,1);
+    border: 4px solid white;
+    z-index: 1;
+}
+
+.proyecto:before{
+    transform: rotate(45deg) translateY(-550px) translateX(0px);
+}
+
+.proyecto:after{
+    transform: rotate(45deg) translateY(550px) translateX(-60px);
+}
+
+.proyecto:hover:before{
+    transform: rotate(45deg) translateY(-240px) translateX(-50px);
+}
+
+.proyecto:hover:after{
+    transform: rotate(45deg) translateY(180px) translateX(-90px);
+}
+
+    
+/* ========================================================
+   =         FIN EFECTO HOVER EN IMAGENES PROYECTOS       =
+   ======================================================== */
+
+
+
+/*Acerca de*/
+
+.main .acerca-de{
+  background: #F3F4FA;
+
+}
+
+.main .acerca-de .contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+
+}
+
+.main .acerca-de .contenedor .titulo-seccion{
+  width: 33.33%;
+  text-align: left;
+
+}
+
+.main .acerca-de .contenedor .titulo-seccion h2{
+
+  margin-bottom: 0;
+}
+
+.main .acerca-de .texto-acerca-de{
+  width: 66.66%;
+  text-align: left;
+
+}
+
+.main .acerca-de .texto-acerca-de p{
+  color: #979797;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/*Slider*/
+
+.main .contenedor-slider{
+  width: 100%;
+  overflow: hidden;
+  background: #F3F4FA;
+  padding: 54px 0;
+  position: relative;
+}
+
+.main .contenedor-slider .slider{
+  width: 400%;
+  display: flex;
+}
+
+.main .contenedor-slider .slider .slide{
+  width: 15%;
+  max-width: 950px;
+  margin-right: 0.7%;
+  box-shadow: 0px 20px 40px #aaa;
+}
+
+.main .contenedor-slider .slider .slide img{
+  width: 100%;
+  vertical-align: top;
+}
+
+.main .contenedor-slider .btn-anterior, .main .contenedor-slider .btn-siguiente{
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.main .contenedor-slider .btn-anterior{
+  left: 2%;
+}
+
+.main .contenedor-slider .btn-siguiente{
+  right: 2%;
+}
+
+.main .contenedor-slider .btn-anterior i, .main .contenedor-slider .btn-siguiente i{
+  color: #fff;
+  
+}
+
+.main .contenedor-slider .btn-anterior i:hover, .main .contenedor-slider .btn-siguiente i:hover{
+  color: #17F2CB;
+
+
+}
+
+/*Nuestro equipo*/
+
+.main .nuestro-equipo{
+  background: #F3F4FA;
+  padding-top: 54px;
+  padding-bottom: 108px;
+}
+
+.main .nuestro-equipo .equipo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo{
+  background-color: #E0ECEA;
+  background-image: linear-gradient(0deg, #E0ECEA 25%, #50DCEB 100%);
+  padding: 50px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.2);
+  text-align: center;
+  border-radius: 20px 0px 20px 0px;
+}
+
+
+
+.main .nuestro-equipo .equipo .persona-equipo:first-child, .main .nuestro-equipo .equipo .persona-equipo:last-child{
+  position: relative;
+  top: 20px;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .foto{
+  width: 100%;
+  max-width: 100px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .foto img{
+
+  margin-top: 10px;
+  width: 100%;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .texto h3{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .texto h4{
+  color: #979797;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .texto p{
+  color: #979797;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+
+
+
+hr{
+  border-bottom: 1px inset white;
+  width: 100%;
+  text-align: center;
+}
+
+.J{
+  border: none;
+  border-bottom: 1px dotted white;
+  width: 100%;
+  
+}
+
+.redes-sociales1 a{
+  color: #fff;
+  display: inline-block;
+}
+
+.redes-sociales1 a:hover{
+  color: #37E3E3;
+}
+
+.facebook{
+  width: 25%;
+  height: auto;
+
+}
+
+.youtube{
+  width: 45%;
+  height: auto; 
+}
+
+.twitter{
+  width: 25%;
+  height: auto;
+
+}
+
+.instagram{
+  width: 25%;
+  height: auto;
+  padding-left: 1px;
+ 
+}
+
+.google{
+  width: 25%;
+  height: auto;
+  padding-left: 1px;
+ 
+}
+
+
+
+
+.main .info-extra .contenedor .info .contenido-info .texto-info p{
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.main .info-extra .contenedor .foto{
+  width: 50%;
+  height: 300px;
+  box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.5);
+ 
+}
+
+/*Contacto*/
+
+.main .contacto{
+  padding: 190px 0;
+  background-image: url('../img/15.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ 
+}
+
+
+.form-title span{
+  font-weight: 800;
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  text-shadow: 0 5px 0 #444;
+
+
+}
+
+ .form-title{
+  font-family:sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #37E3E3;
+  text-shadow: 0 5px 0 #444;
+  text-align: center;
+}
+
+.form-subtitle span{
+  font-weight: 800;
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  
+
+
+}
+
+ .form-subtitle{
+  font-family:sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #37E3E3;
+  text-align: center;
+}
+
+.main .contacto .contenedor-formulario{
+  background-attachment: fixed;
+  min-height: 485px;
+  border-radius:0 10px 10px 0;
+  box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.main .contacto .contenedor-formulario .formulario{
+  width: 50%;
+  padding: 70px;
+  
+}
+
+.main .contacto .contenedor-formulario .formulario h2{
+  font-size: 1.375rem;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.main .contacto .contenedor-formulario .formulario p{
+  color: #979797;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.main .contacto .contenedor-formulario .formulario form input[type="text"], .main .contacto .contenedor-formulario .formulario form input[type="email"]{
+  background: rgba(0,0,0,.7);
+  border: none;
+  border-bottom: 2px inset #37E3E3;
+  padding: 10px 0;
+  outline: none;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #979797;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+}
+
+.main .contacto .contenedor-formulario .formulario form textarea{
+  background: rgba(0,0,0,.7);
+  border: none;
+  border-bottom: 2px inset #37E3E3;
+  padding: 10px 0;
+  outline: none;
+  width: 100%;
+  max-width: 100%;
+  max-height: 88px;
+  min-height: 88px;
+  color: #979797;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0;
+
+
+}
+
+.main .contacto .contenedor-formulario .formulario form input[type="submit"]{
+  width: 100%;
+  border: none;
+  border-bottom: 2px inset black;
+  padding: 8px;
+  background: #12B3B3;
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all .7s ease;
+  border:none;
+  border-radius: 10px 0 10px 0;
+}
+
+.main .contacto .contenedor-formulario .formulario form input[type="submit"]:hover{
+  background: #21F3E6;
+  color: white;
+
+}
+
+.main .contacto .contenedor-formulario .foto{
+  width: 50%;
+  background-image: url('../img/computer2.jpg');
+  background-size: cover;
+  border-radius:0 10px 10px 0;
+}
+
+/*Validacion formulario*/
+
+.main .contacto .contenedor-formulario .formulario form .error{
+  display: none;
+  color: #ff8c8c;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* ------ PIE DE PÁGINA ------ */
+
+footer{
+  background-color: #E0ECEA;
+  background-image: linear-gradient(0deg, #E0ECEA 25%, #50DCEB 100%);
+  padding: 54px 0;
+  text-align: center;
+}
+
+footer .copy{
+  color: #979797;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+footer .siguenos{
+  text-align: center;
+  font-size: 1rem;
+  color: #979797;
+}
+
+
+
+footer .footer-redes a{
+  display: inline-block;
+  padding: 0 10px;
+  color: #979797;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  transition: all .3s ease;
+}
+
+footer .footer-redes a:hover{
+  color: #0089E0;
+  font-size: 2rem;
+}
+
+.footer-diseño-jdh{
+  margin-top: 6vh;
+  text-align: center;
+  color: transparent;
+  background-color: #24E1A1;
+  background-image: linear-gradient(180deg, #979797 25%, #9FACE6 100%);
+  -webkit-background-clip:text;
+  text-align: center;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+.footer-redes-sociales{
+    position: relative;
+    display: inline-block;
+   color: transparent;
+  background-color: #24E1A1;
+  background-image: linear-gradient(180deg, #444 25%, #9FACE6 100%);
+  -webkit-background-clip:text;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+
+@media screen and (max-width:1040px){
+  /*Nuestro equipo*/
+  .main .nuestro-equipo .titulo-seccion{
+    margin-bottom: 60px;
+  }
+  .main .nuestro-equipo .equipo .persona-equipo{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+  .main .nuestro-equipo .equipo .persona-equipo:first-child{
+    top: -20px;
+  }
+  .main .nuestro-equipo .equipo .persona-equipo .foto{
+    margin-right: 20px;
+  }
+
+  /*Sección información extra*/
+  .main .info-extra .contenedor .info{
+    width: 100%;
+  }
+
+
+  .main .info-extra .contenedor .foto{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 900px){
+  /*Encabezado*/
+  .menu-bar-pc{
+    display: none;
+  }
+
+  .menu-mobile{
+    display: block;
+    width: 100%;
+    padding: 5px 18px;
+    background: #fff;
+    background-color: #E0ECEA;
+  background-image: linear-gradient(0deg, #E0ECEA 25%, #50DCEB 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .menu-mobile .barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-mobile .barra .logo{
+    width: 40px;
+
+  }
+  .menu-mobile .barra a i{
+    font-size: 1.4rem;
+    color: #444444;
+  }
+
+  .menu-mobile .menu-principal{
+    width: 80%;
+    display: block;
+    position: fixed;
+    top: 56px;
+    left: -100%;
+    border-bottom: 1px solid rgba(204,204,204,0.5);
+    border-right: 1px solid rgba(204,204,204,0.5);
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.2);
+    background: #fff;
+    text-align: center;
+  }
+
+  .menu-mobile .menu-principal a{
+    display: block;
+    padding: 10px;
+    color: #444444;
+    border-bottom: 1px solid rgba(204,204,204,0.5);
+  }
+
+  .menu-mobile .menu-principal a:hover{
+    background-color: #E0ECEA;
+  background-image: linear-gradient(0deg, #E0ECEA 25%, #50DCEB 100%);
+  }
+  .fixed-header{
+    display: none;
+  }
+
+  .facebook .youtube .twitter .instagram .google{
+    text-align: center;
+  }
+  /*Main*/
+  .main{
+    margin-top: 0;
+  }
+
+  /*Acerca de*/
+  .main .acerca-de .contenedor .titulo-seccion, .main .acerca-de .contenedor .texto-acerca-de{
+    width: 100%;
+    text-align: center;
+  }
+
+  /*Contacto*/
+  .main .contacto .contenedor-formulario .formulario{
+    width: 100%;
+    text-align: center;
+  }
+
+  .main .contacto .contenedor-formulario .foto{
+    display: none;
+  }
+
+  .main .contacto .contenedor-formulario .formulario form input[type="text"], .main .contacto .contenedor-formulario .formulario form input[type="email"], .main .contacto .contenedor-formulario .formulario form textarea{
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width:550px){
+
+  .contenedor-redes-sociales{
+    display: none;
+  }
+  /*Banner principal*/
+  .main .banner-principal .texto-banner h1{
+    font-size: 15px;
+    height: 100px;
+   
+  }
+  /*Titulo secciones*/
+  .titulo-seccion h2{
+    font-size: 2.125rem;
+  }
+  /*Proyectos*/
+  .main .proyectos .galeria-proyectos .proyecto{
+    width: 49%;
+
+  }
+
+  .main .proyectos .galeria-proyectos .A{
+    display: none;
+  }
+
+  /*Nuestro equipo*/
+  .main .nuestro-equipo .equipo .persona-equipo{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  /*Sección información extra*/
+  .main .info-extra .contenedor .info .contenido-info{
+    flex-wrap: wrap;
+    text-align: center;
+    display: block;
+
+  }
+
+  .facebook .youtube .twitter .instagram .google{
+    text-align: center;
+  }
+
+
+  .main .info-extra .contenedor .info .contenido-info .icono-info{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .main .info-extra .contenedor .info .contenido-info .icono-info i{
+    font-size: 3.5rem;
+  }
+  .main .info-extra .contenedor .info .contenido-info .texto-info{
+    margin-left: 0;
+  }
+  .main .info-extra .contenedor .info .contenido-info .texto-info h4{
+    font-size: 1.175rem;
+  }
+  .main .info-extra .contenedor .info .contenido-info:first-child{
+    margin-bottom: 40px;
+  }
+  /*Contacto*/
+  .main .contacto .contenedor-formulario .formulario{
+    padding: 70px 40px;
+  }
+
+  .facebook .youtube .twitter .instagram .google{
+    text-align: center;
+  }
+}
+
+
+#imaginamos{
+  animation-name: zoomInDown;
+  animation-duration: 2s;
+  font-size: 2rem;
+}
+
+
+#web-jdh{
+  animation-name: zoomInDown;
+  animation-duration: 6s;
+}
+
+
+/* COMIENZAN LOS ICONOS DE REDES SOCIALES FIJOS */
+
+
+.contenedor-redes-sociales {
+  width: 400px;
+  left: 0;
+  position: fixed;
+  top: 200px;
+  margin-left: 10px;
+  z-index: 150;
+  
+}
+
+.icono {
+  top: 50%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+
+.facebook{
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.icono-facebook {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+
+  -webkit-box-shadow: 1px 0 1px rgba(0,0,0,0.5);
+  box-shadow: 1px 0 1px rgba(0,0,0,0.5);
+}
+
+
+
+.youtube{
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.icono-youtube {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+
+  -webkit-box-shadow: 1px 0 1px rgba(0,0,0,0.5);
+  box-shadow: 1px 0 1px rgba(0,0,0,0.5);
+}
+
+
+
+.instagram{
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.icono-instagram {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+
+  -webkit-box-shadow: 1px 0 1px rgba(0,0,0,0.5);
+  box-shadow: 1px 0 1px rgba(0,0,0,0.5);
+}
+
+
+
+.twitter{
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.icono-twitter {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+
+  -webkit-box-shadow: 1px 0 1px rgba(0,0,0,0.5);
+  box-shadow: 1px 0 1px rgba(0,0,0,0.5);
+}
+
+
+.google{
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.icono-google {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+
+  -webkit-box-shadow: 1px 0 1px rgba(0,0,0,0.5);
+  box-shadow: 1px 0 1px rgba(0,0,0,0.5);
+}
+
+
+
+.contenedor-descripcion {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 24px;
+}
+
+.icono-descripcion {
+  width: 250px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #3b5998;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 40px;
+  border-radius: 0 20px 20px 0;
+
+  -webkit-box-shadow: 1px 0 1px rgba(0,0,0,0.5);
+  box-shadow: 1px 0 1px rgba(0,0,0,0.5);
+
+  -webkit-transform: translate3d(-110%, 0, 0);
+  -ms-transform: translate3d(-110%, 0, 0);
+  -o-transform: translate3d(-110%, 0, 0);
+  transform: translate3d(-110%, 0, 0);
+
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* Comienza el efecto para que salgan los iconos */
+
+
+.icono-facebook:hover ~ .contenedor-descripcion .icono-descripcion{
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.icono-youtube:hover ~ .contenedor-descripcion .icono-descripcion{
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+
+.icono-instagram:hover ~ .contenedor-descripcion .icono-descripcion{
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.icono-twitter:hover ~ .contenedor-descripcion .icono-descripcion{
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+
+.icono-google:hover ~ .contenedor-descripcion .icono-descripcion{
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/*-------Colores Para Redes Sociales-------*/
+
+.color-facebook{
+  background-color: #3b5998;
+  background-image: linear-gradient(180deg, #3b5998 15%, #fff 100%);
+}
+
+
+.color-youtube{
+  background-color: #FA3434;
+  background-image: linear-gradient(0deg, #FA3434 15%, #444 100%);
+}
+
+.color-instagram{
+  background: #884AEF;
+  background-image: linear-gradient(-180deg, #884AEF 15%, #ECD53D 100%);
+}
+
+.color-twitter {
+  background: #3B94D9;
+  background-image: linear-gradient(0deg, #3B94D9 15%, #979797 100%);
+}
+
+.color-googleplus {
+  background: #dd4339;
+  background-image: linear-gradient(-180deg, #dd4339 85%, #EEEEDA 100%);
+}
+
