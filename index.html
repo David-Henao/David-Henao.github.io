@@ -8,7 +8,7 @@
   <!-- Sintaxis meta:vp + tab -->
 
     <link rel="icon" href="img/iu digital.jpg">
-    <title>web jdh Nº 2 </title>
+    <title>git iu digital </title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="Iconos/css/fontello.css">
@@ -243,6 +243,9 @@
            Galeria </a>
 
 
+           <a href="#git" class="scroll-suave"> ¿Que es Git? </a>
+
+
 
           <a href="#equipo" class="scroll-equipo">
            Pioneros de la computación </a>
@@ -278,6 +281,9 @@
          Galeria </a>
 
 
+         <a href="#git" class="scroll-suave"> ¿Que es Git? </a>
+
+
           <a href="#equipo" class="scroll-equipo">
           pioneros de la computación </a>
 
@@ -309,6 +315,9 @@
 
         <a href="#galeria" class="scroll-galeria">
          Galeria </a>
+
+
+         <a href="#git" class="scroll-suave"> ¿Que es Git? </a>
 
 
         <a href="#equipo" class="scroll-equipo">
@@ -459,6 +468,88 @@
         </div>
       </section>
       </section>
+
+
+
+
+      <!-- Git y Github -->
+       
+      <section class="proyectos" id="git">
+        <div class="contenedor">
+          <div class="titulo-seccion">
+            <h2> ¿Qué es Git? </h2>
+            <p>Git es un sistema de control de versiones distribuido que permite a los desarrolladores llevar un registro de los cambios en el código fuente durante el desarrollo de software. Es una herramienta fundamental para la colaboración en proyectos de programación, ya que facilita la gestión de versiones y la integración de contribuciones de diferentes colaboradores. <br><br> <br>
+
+            
+
+              <b>Controlar Versiones:</b> Guardar y gestionar el historial de cambios en tu código fuente.
+              Colaborar: Trabajar en equipo y fusionar cambios de diferentes desarrolladores. <br><br>
+
+              <b>Crear Ramas:</b> Desarrollar nuevas características o correcciones en ramas separadas, sin afectar el código principal. <br><br> 
+
+              
+              <b>Gestionar Conflictos:</b>Resolver conflictos que surgen cuando múltiples desarrolladores realizan cambios en el mismo archivo. <br><br>
+
+              Git se utiliza en combinación con plataformas de hospedaje de código como GitHub, GitLab y Bitbucket, que proporcionan servicios de almacenamiento en la nube y facilitan la colaboración en proyectos de software.
+
+              
+            
+              <br> <b> <h2> Pasos para conectar tu repositorio local con github</h2>  </b><br>
+
+              <p> <b>1.</b> Conectar tu Repositorio Local con GitHub y creacion de la Rama </p>
+              Lo primero es iniciar con<b>git init + enter</b> <br><br>
+
+              <img src="./img/git 1.png" alt=""> <br>
+              <img src="/img/git 2.png" alt=""> <br><br>
+
+              Para vincular tu repositorio local con un repositorio remoto existente en GitHub, usa el siguiente comando: <br><br>
+
+
+              <b>git remote add origin</b> (Aqui añades la URL de tu proyecto de github: 
+                         https://https://david-henao.github.io) <br> + enter <br>
+              
+              
+              <img src="/img/git 3.png" alt="">
+
+              <p><b>2.</b>Verificar la conexion <br>Para asegurarte de que tu repositorio local está correctamente vinculado con el remoto, ejecuta: <br>
+
+                <b>git remote -v + enter</b></p> <br><br>
+                <img src="/img/git 4.png" alt=""> <br>
+                <img src="/img/git 5.png" alt="">
+
+                <p><b>3.</b>Subir Cambios a github: <br>Para subir tus cambios locales al repositorio remoto en GitHub, utiliza el siguiente comando: <br><b>git push -u origin main</b></p> <br>
+
+                <img src="/img/git 6.png" alt=""> <br>
+               
+                <p>Este comando sube tus commits a la rama principal del repositorio remoto. Si estás trabajando en una rama diferente, reemplaza <b>main</b> con el nombre de tu rama.
+
+                </p> <br>
+
+
+                <h2>Creación de Branches en Git</h2> <br>
+                <p>Los branches es una característica poderosa de Git que te permite trabajar en diferentes versiones de un proyecto al mismo tiempo. Las ramas le permiten desarrollar nuevas funciones, corregir errores o probar nuevas ideas sin afectar la rama principal de su proyecto.
+                </p> <br>
+
+                <p><b>Desarrollo paralelo:</b> Permite a varios desarrolladores trabajar en diferentes características o correcciones de manera simultánea. <br> <br>
+                <b>Pruebas:</b> Puedes probar nuevas ideas sin afectar la estabilidad de la rama principal. <br><br>
+                 <b> Gestión de versiones:</b> Facilita la integración de diferentes versiones y cambios en el proyecto.</p> <br>
+
+                 <img src="/img/branch 2.png" alt=""> <br>
+                 <p>Esto creará una nueva rama llamada creacionnuevarama y cambiará a esa rama. Una vez que haya realizado los cambios y correcciones en esta rama, puede fusionarlos en la rama maestra:
+                </p> <br><br>
+              
+                <p>El comando <b>git merge</b> fusiona los cambios de la rama creacionnuevarama en la rama maestra principal. Si hay conflictos, Git le pedirá que los resuelva antes de completar la fusión.
+                </p><br>
+                <p>Las ramas de Git son esenciales para mantener un flujo de trabajo organizado y eficiente. Úsalos para experimentar, diseñar y colaborar más fácilmente en tus proyectos.
+                </p>
+
+
+              
+
+              
+
+
+
 
       <!-- Nuestro equipo -->
       <section class="nuestro-equipo" id="equipo">
